@@ -1,0 +1,1016 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* General styling */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: auto;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* Ensure the preloader is above everything */
+}
+
+.p_logo-text {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.p_subtext {
+    font-size: 1rem;
+    /* Smaller font size for 'INVESTMENTS' */
+    font-weight: 450;
+    letter-spacing: 5px;
+    display: block;
+    /* Ensures 'INVESTMENTS' is on a new line */
+    text-align: center;
+    /* Adjusts alignment as needed */
+}
+
+.p_highlight {
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #000;
+    text-align: center;
+}
+
+
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffff;
+}
+
+
+.highlight {
+    font-weight: 700;
+    color: #ffff;
+}
+
+
+
+/* Main Content */
+#main-content {
+    display: none;
+    /* Hidden until preloader disappears */
+    position: relative;
+    z-index: 10;
+    /* Ensure the main content is above the videos */
+}
+
+header .logo-text {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+header .logo-text .highlight {
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: white;
+}
+
+header .logo-text .subtext {
+    font-size: 1rem;
+    /* Smaller font size for 'INVESTMENTS' */
+    font-weight: 450;
+    letter-spacing: 5px;
+    display: block;
+    /* Ensures 'INVESTMENTS' is on a new line */
+    text-align: left;
+    /* Adjusts alignment as needed */
+
+}
+
+/* Video Background */
+.video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    /* Place videos behind content */
+}
+
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+/* Overlay for content */
+.overlay {
+    position: relative;
+    z-index: 10;
+    /* Place content above the videos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    /* Aligns items to the right */
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    /* Adjust padding */
+    margin: 0;
+    z-index: 1000;
+    max-width: calc(100% - 20px);
+    /* Adjust to ensure it fits */
+    box-sizing: border-box;
+    /* Includes padding in width calculation */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    /* Letter spacing */
+    font-weight: 500;
+    /* Font weight */
+    position: relative;
+    /* Keep relative for any child elements */
+    white-space: nowrap;
+    /* Prevent wrapping */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.tagline {
+    position: absolute;
+    top: 14%;
+    /* Adjust this value to position it vertically as desired */
+    left: 10%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the element */
+    color: #fff;
+    z-index: 2;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0;
+    /* Remove existing margins */
+    display: flex;
+    justify-content: end;
+    margin-left: 150px;
+}
+
+.tagline h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0;
+    margin: 40px 0 80px;
+    max-width: 100%;
+}
+
+.tagline .highlight {
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+    /* Ensure logo is above the video */
+}
+
+/* Lower right content */
+.lower-right-content {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+    z-index: 10;
+    /* Ensure content is above the video */
+}
+
+/* Container for the section with white background */
+#white-background-section {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+    flex-direction: column;
+    /* Stacks the carousel and form vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* Adds space between the carousel and the form */
+}
+
+/* Main carousel container */
+.company-carousel {
+    width: 100%;
+    overflow: hidden;
+    /* Hides the overflow to give the scrolling effect */
+    position: relative;
+    /* display: flex; */
+    /* justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0; */
+}
+
+/* Carousel wrapper for the images */
+.carousel {
+    display: flex;
+    /* animation: scroll 25s linear infinite; Animation for continuous scrolling */
+    flex-wrap: nowrap;
+    /* Prevent items from wrapping */
+    animation: scroll 15s linear infinite;
+    /* Continuous scrolling animation */
+    width: calc(250px * 16);
+    /* Width based on the number of logos */
+}
+
+
+.carousel img {
+    width: 150px;
+    /* Adjust the logo size as per your requirement */
+    margin: 0 20px;
+    /* Adds spacing between logos */
+    object-fit: contain;
+    /*Ensures the logos retain their aspect ratio */
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    /* Makes logos grayscale initially */
+    /* transition: filter 0.3s ease-in-out; Smooth transition on hover */
+}
+
+/* On hover, logos will return to their original colors */
+.carousel img:hover {
+    filter: grayscale(0);
+}
+
+/* Keyframes for the scrolling effect */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+        /* Start from the right side (off-screen) */
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Scroll to the left (off-screen) */
+    }
+}
+
+/* General layout fixes */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+    /* Ensures space between carousel and Buy/Rent section */
+}
+
+
+/* Buy/Rent Section styling */
+.buy-rent-section {
+    width: 100%;
+    /* Take full width */
+    padding: 20px 0;
+    /* Padding for spacing without box */
+    background-color: transparent;
+    /* Remove background box look */
+    display: flex;
+    justify-content: center;
+    /* Center the contents */
+    flex-wrap: wrap;
+    /* Ensure the form fields wrap on smaller screens */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Center the heading */
+.buy-rent-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Centered text */
+    font-size: 24px;
+    /* Adjust the font size */
+    margin-bottom: 20px;
+}
+
+/* Styling for the buttons */
+.options {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons */
+    gap: 10px;
+    /* Space between buttons */
+    margin-bottom: 20px;
+    width: 100%;
+    /* Full width */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Buttons styling */
+.options button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    max-width: 150px;
+    /* Ensure buttons aren't too wide */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Active button */
+.options button.active {
+    background-color: #000;
+    color: white;
+}
+
+/* Hover effect */
+.options button:hover {
+    background-color: #ccc;
+}
+
+/* Form styling */
+.buy-rent-section form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* Align fields and button to the bottom */
+    gap: 20px;
+    /* Space between form inputs */
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Form groups (fields) */
+.form-group,
+.additional-fields .form-group {
+    flex: 1;
+    /* Take equal space for all form fields */
+    min-width: 250px;
+    /* Ensure each input field has a minimum width */
+    /* margin-bottom: 20px; */
+}
+
+.additional-fields {
+    display: flex;
+    /* Align additional fields in a row */
+    flex: 1;
+    /* Takes the remaining space */
+    gap: 20px;
+    /* Space between additional fields */
+    width: 100%;
+    /* Full width for consistency */
+}
+.form-group.button-group {
+    flex-basis: 100%; /* Take full width */
+    text-align: right; /* Align button to the right */
+    margin-top: 10px; /* Add some margin on top */
+}
+
+/* Inputs and labels styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Enquire button styling */
+.enquire-btn {
+    padding: 12px 30px;
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: left;
+    /* Centers the button */
+    /* padding: 12px 30px;
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Push button to the right */
+    /* margin-top: 20px; Add spacing above button
+    align-self: flex-end; Align to the bottom  */
+}
+
+/* Hover effect for enquire button */
+.enquire-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .buy-rent-section form {
+        flex-direction: column;
+        gap: 15px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .options {
+        flex-direction: column;
+    }
+
+    .options button {
+        max-width: 100%;
+        /* Full-width buttons on smaller screens */
+    }
+
+    .enquire-btn {
+        width: 100%;
+        /* Full-width enquire button on mobile */
+    }
+}
+
+.carousel-container {
+    width: 80%; /* Adjust this as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.swiper-container {
+    width: 100%;
+}
+.properties-carousel {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.properties-carousel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.properties-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.property-card {
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;  /* Fixed width for all cards */
+    height: 400px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the set height */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.property-card h3,
+.property-card p {
+    margin: 0;
+    padding: 5px 0;
+
+}
+
+.property-card p {
+    font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+}
+
+.property-card button {
+    background-color: #f90;
+        border: none;
+        padding: 8px 16px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+}
+
+.property-card button:hover {
+    background-color: #e67e22;
+}
+
+/* Styling for the carousel navigation */
+.properties-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.properties-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.properties-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.properties-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*Explore-by-area*/
+
+.explore-areas {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.area-carousel-container {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.area-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+    /* Hide all slides by default */
+}
+
+.slide.active {
+    display: flex;
+    /* Show the active slide */
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+
+.image {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        /* Stack columns vertically on smaller screens */
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+
+.about_us {
+    padding: 60px 20px 120px;
+    background: var(--light-gray-color);
+}
+
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.about_container .text_section {
+    max-width: 50%;
+}
+
+.about_container .text_section p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.about_container .image_section {
+    max-width: 45%;
+}
+
+.about_container .image_section img {
+    width: 100%;
+}
+
+
+/* Footer Content*/
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.f_logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
+
+.f_logo-text {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.logo-bold {
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #333;
+}
+
+.f_subtext {
+    font-size: 1rem;
+    /* Smaller font size for 'INVESTMENTS' */
+    font-weight: 450;
+    letter-spacing: 5px;
+    display: block;
+    /* Ensures 'INVESTMENTS' is on a new line */
+    text-align: center;
+    /* Adjusts alignment as needed */
+}
+
+.footer-info {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.social-icon:hover {
+    color: #0073e6;
+}
+
+
+/* Existing styles remain unchanged */
+
+/* Responsive layout adjustments for navbar, header, and main content */
+@media (max-width: 1024px) {
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+    }
+
+    /* Logo Text */
+    header .logo-text {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    header .logo-text .subtext {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Tagline */
+    .tagline h1 {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    /* Main content */
+    .overlay {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar */
+    nav {
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    /* Logo Text */
+    header .logo-text {
+        font-size: 1.5rem;
+    }
+
+    header .logo-text .subtext {
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+    }
+
+    /* Tagline */
+    .tagline h1 {
+        font-size: 2.5rem;
+        margin: 20px 0 50px;
+    }
+
+    /* Preloader */
+    .p_logo-text {
+        font-size: 2rem;
+    }
+
+    .p_subtext {
+        font-size: 0.8rem;
+    }
+
+    /* Main content */
+    .overlay {
+        padding: 5px;
+    }
+
+    /* Video background */
+    .bg-video {
+        object-fit: contain;
+    }
+
+    /* Adjust the buy/rent section layout */
+    .buy-rent-section {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    /* Property carousel adjustments */
+    .property-card img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+    /* Logo Text */
+    header .logo-text {
+        font-size: 1.2rem;
+    }
+
+    header .logo-text .subtext {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    /* Tagline */
+    .tagline h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    /* Adjust the carousel */
+    .carousel img {
+        width: 100px;
+        margin: 0 10px;
+    }
+
+    /* Buy/Rent Section buttons */
+    .options button {
+        max-width: 100%;
+    }
+
+    .enquire-btn {
+        width: 100%;
+    }
+
+    /* Adjust property cards for small screens */
+    .property-card img {
+        max-width: 150px;
+    }
+}
+
+/* Smallest screen adjustments */
+@media (max-width: 320px) {
+    /* Navbar */
+    nav a {
+        font-size: 0.7rem;
+    }
+
+    /* Logo Text */
+    header .logo-text {
+        font-size: 1rem;
+    }
+
+    header .logo-text .subtext {
+        font-size: 0.65rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* Tagline */
+    .tagline h1 {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        top: 10%;
+    }
+
+    /* Property cards */
+    .property-card img {
+        max-width: 120px;
+    }
+
+    /* Buy/Rent Section */
+    .buy-rent-section {
+        padding: 5px 0;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        max-width: 100%;
+    }
+
+    .f_logo-text {
+        font-size: 2rem;
+    }
+}
