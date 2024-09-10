@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up Investments</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Pre-loader -->
+    <div id="preloader">
+        <div class="logo-container"></div>
+        <div class="p_logo-text">LEVEL <span class="p_highlight">UP</span><br><span class="p_subtext">INVESTMENTS</span>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content">
+        <!-- Background Video Section -->
+        <header>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#buy">Buy/Rent</a>
+                <a href="#properties">Properties</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="video-container">
+                <video class="bg-video" id="video1" src="videos/first.mp4" autoplay muted></video>
+                <video class="bg-video" id="video2" src="videos/second.mp4"></video>
+                <video class="bg-video" id="video3" src="videos/third.mp4"></video>
+            </div>
+            <div class="logo">
+                <span class="logo-text">
+                    LEVEL<span class="highlight">UP</span><br>
+                    <span class="subtext">INVESTMENTS</span>
+                </span>
+            </div>
+
+            <div class="tagline">
+                <h1>The Art of <span class="highlight">Elevated</span><br>Living</h1>
+            </div>
+        </header>
+
+        <!-- White Background Section -->
+
+        <section id="white-background-section">
+            <div class="container">
+                <!-- Company Carousel Section -->
+                <div class="company-carousel">
+                    <div class="carousel">
+                        <img src="images/logos/arada.png" alt="Arada">
+                        <img src="images/logos/azizi.png" alt="Azizi">
+                        <img src="images/logos/binghatti.png" alt="Binghatti">
+                        <img src="images/logos/Damac.png" alt="Damac">
+                        <img src="images/logos/danube.png" alt="Danube">
+                        <img src="images/logos/Deyaar-Logo.png" alt="Deyaar">
+                        <img src="images/logos/ellington.png" alt="Ellington">
+                        <img src="images/logos/mag.png" alt="MAG">
+                        <img src="images/logos/meraas.png" alt="Meraas">
+                        <img src="images/logos/meydan.png" alt="Meydan">
+                        <img src="images/logos/nakheel.png" alt="Nakheel">
+                        <img src="images/logos/omniyat.png" alt="Omniyat">
+                        <img src="images/logos/selectgroup.png" alt="Select Group">
+                        <img src="images/logos/Sobha.png" alt="Sobha">
+                        <img src="images/logos/thefirstgroup.png" alt="The First Group">
+                        <img src="images/logos/wasl-properties-img.png" alt="Wasl Properties">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Buy/Rent Section -->
+        <div class="buy-rent-section" id="buy">
+            <h2>What are you Looking For?</h2>
+            <div class="options">
+                <button id="rent-button" class="active" onclick="toggleOption('rent')">Rent</button>
+                <button id="buy-button" onclick="toggleOption('buy')">Buy</button>
+            </div>
+
+            <form id="buy-rent-form">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter location">
+                </div>
+
+                <div id="additional-fields" class="additional-fields">
+
+                    <div class="form-group">
+                        <label for="property-type">Property Type</label>
+                        <input type="text" id="property-type" placeholder="Property Type">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duration">Duration</label>
+                        <input type="text" id="duration" placeholder="12 Months">
+                    </div>
+
+                    <button type="submit" class="enquire-btn">Enquire</button>
+            </form>
+        </div>
+
+        <!-- Listed Properties Carousel -->
+        <div class="carousel-container">
+            <h2>Listed Properties</h2>
+            
+            <!-- Swiper container for properties carousel -->
+            <div class="properties-carousel swiper-container" id="properties">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide property-card">
+                        <img src="images/properties/1.jpg" alt="Property 1">
+                        <h3>Siniya Island</h3>
+                        <p>2, 3 & 4 BHK</p>
+                        <p>Starts AED 23,000</p>
+                        <button>Book Now</button>
+                    </div>
+                    <div class="swiper-slide property-card">
+                        <img src="images/properties/2.jpg" alt="Property 2">
+                        <h3>Siniya Island</h3>
+                        <p>2, 3 & 4 BHK</p>
+                        <p>Starts AED 23,000</p>
+                        <button>Book Now</button>
+                    </div>
+                    <div class="swiper-slide property-card">
+                        <img src="images/properties/3.jpg" alt="Property 3">
+                        <h3>Siniya Island</h3>
+                        <p>2, 3 & 4 BHK</p>
+                        <p>Starts AED 23,000</p>
+                        <button>Book Now</button>
+                    </div>
+                    <div class="swiper-slide property-card">
+                        <img src="images/properties/4.jpg" alt="Property 4">
+                        <h3>Siniya Island</h3>
+                        <p>2, 3 & 4 BHK</p>
+                        <p>Starts AED 23,000</p>
+                        <button>Book Now</button>
+                    </div>
+                    <div class="swiper-slide property-card">
+                        <img src="images/properties/5.jpg" alt="Property 5">
+                        <h3>Siniya Island</h3>
+                        <p>2, 3 & 4 BHK</p>
+                        <p>Starts AED 23,000</p>
+                        <button>Book Now</button>
+                    </div>
+                    <div class="swiper-slide property-card">
+                        <img src="images/properties/6.jpg" alt="Property 6">
+                        <h3>Siniya Island</h3>
+                        <p>2, 3 & 4 BHK</p>
+                        <p>Starts AED 23,000</p>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+        
+                <!-- Add Pagination and Navigation (optional) -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        
+
+
+        <!-- Explore by Areas Section -->
+        <div class="explore-areas">
+            <h2>Explore by Areas</h2>
+            <div class="area-carousel-container">
+                <div class="area-carousel">
+                    <!-- First Slide -->
+                    <div class="slide active">
+                        <div class="column">
+                            <img src="images/explore/UAE1.png" class="image" alt="Jumeirah">
+                        </div>
+                        <div class="column">
+                            <img src="images/explore/uae1_1.png" class="image" alt="Jumeirah">
+                            <div class="text">
+                                Jumeirah is a relaxed residential strip with sandy beaches like Jumeirah Public Beach,
+                                and
+                                guided tours at the white-stone Jumeirah Mosque. Shopping options range from small,
+                                quirky malls
+                                with homegrown fashion stores and indie coffee houses serving specialty brews.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Slide -->
+                    <div class="slide">
+                        <div class="column">
+                            <img src="images/explore/UAE2.png" class="image" alt="Downtown Dubai">
+                        </div>
+                        <div class="column">
+                            <img src="images/explore/uae2_2.png" class="image" alt="Downtown Dubai">
+                            <div class="text">
+                                Downtown Dubai is known for its towering skyscrapers, including the iconic Burj Khalifa,
+                                as well
+                                as the sprawling Dubai Mall with over 1,200 shops and an aquarium. The area is home to
+                                elegant
+                                hotels, hip bars, and fine dining.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onclick="plusSlides(1)">&#10095;</div>
+        </div>
+
+
+
+
+        <!-- About Us Section -->
+        <section class="about_us" id="about">
+            <div class="section_container">
+                <div class="about_container">
+                    <div class="text_section">
+                        <h2 class="section_title">About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quibusdam in culpa voluptates
+                            iste similique nulla sed dolor. Maxime, saepe voluptates!
+                        </p>
+                    </div>
+
+                    <div class="image_section">
+                        <img src="images/about/ijaz-rafi-Q77Vxz-8FR8-unsplash.jpg" alt="Dubai" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Footer Design</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+
+        <body>
+
+            <!-- Footer Section -->
+            <footer class="footer" id="contact">
+                <div class="footer-content">
+                    <div class="f_logo">
+                        <span class="f_logo-text">LEVEL<span class="logo-bold">UP</span><br> <span
+                                class="f_subtext">INVESTMENTS</span></span>
+                    </div>
+                    <div class="footer-info">
+                        <p><strong>Address:</strong> 906, Park Regis, Business Bay, Dubai, UAE</p>
+                        <p><strong>Contact:</strong> +971 58 560 5980 / +971 55 537 8328</p>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2024 Level Up Investments. All rights reserved.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class='bx bxl-facebook'></i></a>
+                            <a href="#" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                            <a href="#" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                            <a href="#" class="social-icon"><i class='bx bxl-linkedin-square'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+        </body>
+
+        </html>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
