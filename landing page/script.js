@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Preloader
-    setTimeout(function() {
-        document.getElementById('preloader').style.display = 'none';
-        document.getElementById('main-content').style.display = 'block';
-    }, 2000); // Hide after 2 seconds
+    // setTimeout(function() {
+    //     document.getElementById('preloader').style.display = 'none';
+    //     document.getElementById('main-content').style.display = 'block';
+    // }, 2000); // Hide after 2 seconds
 
     // Background video loop logic
     let videos = ['video1', 'video2', 'video3'];
