@@ -14,7 +14,7 @@ html {
 }
 
 /* Preloader */
-#preloader {
+/* #preloader {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -24,9 +24,9 @@ html {
     align-items: center;
     z-index: 10;
     /* Ensure the preloader is above everything */
-}
 
-.p_logo-text {
+
+/* .p_logo-text {
     color: #000;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -35,31 +35,31 @@ html {
     font-size: 2.5rem;
     width: 100%;
     text-align: center;
-}
+} */
 
-.p_subtext {
+/* .p_subtext {
     font-size: 1rem;
     /* Smaller font size for 'INVESTMENTS' */
-    font-weight: 450;
+    /* font-weight: 450;
     letter-spacing: 5px;
-    display: block;
+    display: block; */
     /* Ensures 'INVESTMENTS' is on a new line */
-    text-align: center;
+    /* text-align: center; */
     /* Adjusts alignment as needed */
-}
 
-.p_highlight {
+
+/* .p_highlight {
     font-weight: 700;
     letter-spacing: 0px;
     color: #000;
     text-align: center;
-}
+} */
 
 
 
-.logo-container {
+/* .logo-container {
     text-align: center;
-}
+} */
 
 .logo-text {
     font-size: 3rem;
@@ -77,9 +77,9 @@ html {
 
 /* Main Content */
 #main-content {
-    display: none;
+    /* display: none;
     /* Hidden until preloader disappears */
-    position: relative;
+    position: relative; 
     z-index: 10;
     /* Ensure the main content is above the videos */
 }
@@ -514,12 +514,13 @@ input {
 }
 
 .carousel-container {
-    width: 80%; /* Adjust this as needed */
-    margin: 0 auto; /* Center the container */
+    width: 100%; /* Adjust this as needed */
+    height: auto;
+    margin: 15px auto; /* Center the container */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 .swiper-container {
     width: 100%;
@@ -552,13 +553,13 @@ input {
 }
 
 .property-card {
-    background-color: #fff;
+    background-color: #ffffff;
     text-align: center;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 300px;  /* Fixed width for all cards */
-    height: 400px; /* Fixed height for all cards */
+    width: 30px;  /* Fixed width for all cards */
+    height: 30px; /* Fixed height for all cards */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -581,7 +582,7 @@ input {
 
 .property-card p {
     font-size: 14px;
-        color: #666;
+        color: #4d4b4b;
         margin-bottom: 10px;
 }
 
@@ -884,13 +885,13 @@ input {
     }
 
     /* Preloader */
-    .p_logo-text {
+    /* .p_logo-text {
         font-size: 2rem;
-    }
+    } */
 
-    .p_subtext {
+    /* .p_subtext {
         font-size: 0.8rem;
-    }
+    } */
 
     /* Main content */
     .overlay {
