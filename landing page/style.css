@@ -297,15 +297,10 @@ nav a:hover {
     /*Ensures the logos retain their aspect ratio */
     height: auto;
     display: block;
-    filter: grayscale(100%);
-    /* Makes logos grayscale initially */
-    /* transition: filter 0.3s ease-in-out; Smooth transition on hover */
+    transition: filter 0.3s ease-in-out; Smooth transition on hover
 }
 
-/* On hover, logos will return to their original colors */
-.carousel img:hover {
-    filter: grayscale(0);
-}
+
 
 /* Keyframes for the scrolling effect */
 @keyframes scroll {
