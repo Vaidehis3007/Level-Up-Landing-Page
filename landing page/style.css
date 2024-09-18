@@ -340,18 +340,15 @@ nav a:hover {
     /* Center the contents */
     flex-wrap: wrap;
     /* Ensure the form fields wrap on smaller screens */
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Montserrat", sans-serif ;
+       font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
 /* Center the heading */
 .buy-rent-section h2 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    
     width: 100%;
     /* Full width */
     text-align: center;
@@ -360,7 +357,12 @@ nav a:hover {
     /* Adjust the font size */
     margin-bottom: 20px;
 }
-
+.buy-rent-section h2 p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
 /* Styling for the buttons */
 .options {
     display: flex;
@@ -615,6 +617,13 @@ input {
     margin: 0 auto;
 }
 
+.explore-areas h2 p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .area-carousel-container {
     overflow: hidden;
     padding: 20px 0;
@@ -654,7 +663,7 @@ input {
     font-size: 14px;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 600px;
     font-style: normal;
 }
 
