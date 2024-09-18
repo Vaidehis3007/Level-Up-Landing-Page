@@ -281,9 +281,9 @@ nav a:hover {
     /* animation: scroll 25s linear infinite; Animation for continuous scrolling */
     flex-wrap: nowrap;
     /* Prevent items from wrapping */
-    animation: scroll 15s linear infinite;
+    animation: scroll 3s linear infinite;
     /* Continuous scrolling animation */
-    width: calc(250px * 16);
+    /* width: calc(250px * 16); */
     /* Width based on the number of logos */
 }
 
@@ -297,7 +297,7 @@ nav a:hover {
     /*Ensures the logos retain their aspect ratio */
     height: auto;
     display: block;
-    transition: filter 0.3s ease-in-out; Smooth transition on hover
+    /* transition: filter 0.3s ease-in-out; Smooth transition on hover */
 }
 
 
